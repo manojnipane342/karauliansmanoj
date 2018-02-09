@@ -1,0 +1,272 @@
+a {
+    color: #f4edb9
+}
+
+.header_top {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #f4edb9
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #f4edb9
+}
+
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: #f4edb9;
+        color: #fff
+    }
+
+#searchIcon {
+    background-color: #f4edb9;
+    color: #fff
+}
+
+    #searchIcon:hover {
+        opacity: 0.75
+    }
+
+.navbar-toggle {
+    background-color: #f4edb9;
+    border-color: #f4edb9
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #f4edb9;
+    opacity: 0.75
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+
+.latest_newsarea {
+    border-bottom: 2px solid #f4edb9;
+    border-top: 2px solid #f4edb9
+}
+
+    .latest_newsarea span {
+        background-color: #f5eeba;
+        color: #1b1a1a;
+    }
+
+        .latest_newsarea span:after, .latest_newsarea span:before {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none
+        }
+
+        .latest_newsarea span:after {
+            border-color: rgba(0,153,204,0);
+            border-left-color: #f5eeba;
+            border-width: 10px;
+            margin-top: -10px
+        }
+
+        .latest_newsarea span:before {
+            border-color: rgba(0,153,204,0);
+            border-left-color: #f5eeba;
+            border-width: 11px;
+            margin-top: -11px
+        }
+
+.news_sticker li a:before {
+    color: #f4edb9
+}
+
+.single_leftbar > h2 span {
+    background-color: #0e0e0e;
+}
+
+.recent_title:before {
+    color: #f4edb9
+}
+
+.right_slide {
+    background: none repeat scroll 0 0 #f4edb9;
+    color: #fff
+}
+
+    .left_slide:hover, .right_slide:hover, .left_slide:focus, .right_slide:focus {
+        background-color: #fff;
+        color: #f4edb9
+    }
+
+.carousel-indicators .active {
+    background-color: #f4edb9
+}
+
+.catg_title:before {
+    color: #f4edb9
+}
+
+.category_title a {
+    background-color: #171716;
+    color: #f7eb88;
+}
+
+    .category_title a:hover {
+        background-color: #f4edb9;
+        color: #fff;
+        text-decoration: none
+    }
+
+.sing_commentbox > p:hover {
+    color: #f4edb9
+}
+
+.sing_commentbox > a:hover {
+    color: #f4edb9
+}
+
+.label_nav li a:hover {
+    background-color: #f4edb9;
+    color: #eee;
+    border-color: #f4edb9
+}
+
+.single_footer_top > h2 {
+    border-bottom: 5px solid #f5eeba;
+}
+
+.subscribe_mail i {
+    color: #f4edb9
+}
+
+.submit_btn {
+    background-color: #f4edb9;
+    color: #fff
+}
+
+    .submit_btn:hover, .send_btn:hover {
+        border: 3px solid #FFF;
+        background-color: #f4edb9 ;
+        color: #000;
+    }
+
+.footer_labels li a:hover, .footer_labels li a:focus {
+    background-color: #f4edb9
+}
+
+.send_btn {
+    background-color: #f4edb9 !important;
+    color: #fff
+}
+
+    .send_btn:hover {
+        background-color: #f4edb9 !important;
+        color: #000;
+    }
+
+.tooltip-inner {
+    border-bottom: 3px solid #f4edb9
+}
+
+.tooltip.top .tooltip-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f4edb9
+}
+
+.scrollToTop {
+    background: none repeat scroll 0 0 #f4edb9;
+    border: 1px solid #FFF;
+    color: #151515;
+    border-radius: 5px
+}
+
+    .scrollToTop:hover, .scrollToTop:focus {
+        background-color: #fff;
+        border-color: #f4edb9;
+        color: #f4edb9 !important
+    }
+
+.link_nav li a {
+    color: #f4edb9
+}
+
+    .link_nav li a:before {
+        color: #f4edb9
+    }
+
+.read_more {
+    background-color: #f4edb9;
+    color: #fff
+}
+
+    .read_more:hover, .read_more:focus {
+        color: #fff;
+        background-color: #111
+    }
+
+.author_name:hover, .author_name:focus, .post_date:hover, .post_date:focus {
+    color: #f4edb9
+}
+
+.single_post_area .author_name, .single_post_area .post_date {
+    color: #f4edb9
+}
+
+    .single_post_area .author_name:hover, .single_post_area .post_date:hover {
+        color: #444
+    }
+
+    .single_post_area .author_name i, .post_date i {
+        color: #252525
+    }
+
+.post_title {
+    border-color: #f4edb9;
+    color: #555
+}
+
+.related_post > h2 i {
+    color: #f4edb9
+}
+
+.single_post_content ul li:before {
+    color: #f4edb9
+}
+
+.custom-tabs {
+    background: none repeat scroll 0 0 #f4edb9
+}
+
+    .custom-tabs > li > a:hover {
+        background-color: #f4edb9;
+        color: #fff
+    }
+
+    .custom-tabs > li.active > a, .custom-tabs > li.active > a:hover, .custom-tabs > li.active > a:focus {
+        border-top: 3px solid #f4edb9
+    }
+
+.left_slide {
+    background: none repeat scroll 0 0 #f4edb9
+}
+
+.footer_top {
+    border-top: 5px solid #f5eeba;
+}
+
+.slick-prev, .slick-next {
+    background: none repeat scroll 0 0 #1f1f1e;
+    color: #f7eb88;
+}
+
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background: #fff;
+        color: #f4edb9 !important
+    }
+
+.single_post_content blockquote {
+    border-color: #f4edb9
+}
+
+.error_content a:hover {
+    background-color: #f4edb9
+}

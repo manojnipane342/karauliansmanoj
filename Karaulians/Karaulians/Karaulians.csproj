@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AA0F69E-1D71-495B-8157-1440CFCE50FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Karaulians</RootNamespace>
+    <AssemblyName>Karaulians</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anjanimaa_hindi.aspx" />
+    <Content Include="bahadurpur_hindi.aspx" />
+    <Content Include="balaji_hindi.aspx" />
+    <Content Include="bayana_hindi.aspx" />
+    <Content Include="Blog.aspx" />
+    <Content Include="counter.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="educational_institute_hindi.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="kailadevi_hindi.aspx" />
+    <Content Include="kalyanray_hindi.aspx" />
+    <Content Include="karauli_city_rawal_hindi.aspx" />
+    <Content Include="karauli_distict_hindi.aspx" />
+    <Content Include="karauli_jalvayu_hindi.aspx" />
+    <Content Include="karauli_Now_hindi.aspx" />
+    <Content Include="maheshwara_hindi.aspx" />
+    <Content Include="mandrayal_hindi.aspx" />
+    <Content Include="newwebvisitors.xml" />
+    <Content Include="next1_temple_hindi.ascx" />
+    <Content Include="next_story_1.ascx" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\images\header_dot.png" />
+    <Content Include="assets\css\images\pattern-bg - Copy.png" />
+    <Content Include="assets\css\images\pattern-bg.png" />
+    <Content Include="assets\css\images\status.gif" />
+    <Content Include="assets\css\li-scroller.css" />
+    <Content Include="assets\css\slick.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\style_eng.css" />
+    <Content Include="assets\css\style_hindi.css" />
+    <Content Include="assets\css\theme.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\html5shiv.min.js" />
+    <Content Include="assets\js\jquery.li-scroller.1.0.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\slick.min.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="img\anjani.jpg" />
+    <Content Include="img\f.jpg" />
+    <Content Include="img\f2.jpg" />
+    <Content Include="img\f3.jpeg" />
+    <Content Include="img\f3.jpg" />
+    <Content Include="img\f4.jpg" />
+    <Content Include="img\histotical\badi haveli.jpeg" />
+    <Content Include="img\histotical\bahadurpur.jpeg.jpg" />
+    <Content Include="img\histotical\bayana .jpeg.jpg" />
+    <Content Include="img\histotical\DSC00431-01.jpeg-1.jpg" />
+    <Content Include="img\histotical\gargh_ki_haveli.jpeg" />
+    <Content Include="img\histotical\inayati_ki_garhi.jpeg" />
+    <Content Include="img\histotical\jadge_sahab_haveli.jpeg" />
+    <Content Include="img\histotical\m.f. 1.jpeg.jpg" />
+    <Content Include="img\histotical\mandrayal_side.jpg" />
+    <Content Include="img\histotical\parichay.jpg" />
+    <Content Include="img\histotical\rawal 3.jpeg.jpg" />
+    <Content Include="img\histotical\rawal1.jpeg.jpg" />
+    <Content Include="img\histotical\rawal2.jpeg.jpg" />
+    <Content Include="img\histotical\shahi_kund.jpeg.jpg" />
+    <Content Include="img\histotical\shikarganj.jpg" />
+    <Content Include="img\hs.jpg" />
+    <Content Include="img\kings\gnesh pal_480x480.jpg" />
+    <Content Include="img\logo280-280.png" />
+    <Content Include="img\mandralakakila.jpg" />
+    <Content Include="img\natural\kailadevi_forest_trees.jpg" />
+    <Content Include="img\natural\maheshwara.jpg" />
+    <Content Include="img\P8240199.JPG" />
+    <Content Include="img\paintings\blog.jpg" />
+    <Content Include="img\paintings\logo280-280.jpg" />
+    <Content Include="img\paintings\rsz_p8240362.jpg" />
+    <Content Include="img\rsz_1p8230131.jpg" />
+    <Content Include="img\Shursen_Map.jpg" />
+    <Content Include="img\slide1.png" />
+    <Content Include="img\slide2.png" />
+    <Content Include="img\temple\anjanimaa_temple.jpg" />
+    <Content Include="img\temple\anjanimaa_temple_head.jpg" />
+    <Content Include="img\temple\kailadevi0.jpeg.jpg" />
+    <Content Include="img\temple\kalyanray.jpg" />
+    <Content Include="img\temple\kalyanray_ji.jpg" />
+    <Content Include="img\temple\mahnipur_balaji.jpeg.jpg" />
+    <Content Include="img\WhatsApp Image 2017-12-26 at 1.12.54 AM.jpeg" />
+    <Content Include="riyasat_taksal_hindi.aspx" />
+    <Content Include="shikarganj_hindi.aspx" />
+    <Content Include="testpage.aspx" />
+    <Content Include="timangarh_hindi.aspx" />
+    <Content Include="updatepage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anjanimaa_hindi.aspx.cs">
+      <DependentUpon>anjanimaa_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anjanimaa_hindi.aspx.designer.cs">
+      <DependentUpon>anjanimaa_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bahadurpur_hindi.aspx.cs">
+      <DependentUpon>bahadurpur_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bahadurpur_hindi.aspx.designer.cs">
+      <DependentUpon>bahadurpur_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="balaji_hindi.aspx.cs">
+      <DependentUpon>balaji_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="balaji_hindi.aspx.designer.cs">
+      <DependentUpon>balaji_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bayana_hindi.aspx.cs">
+      <DependentUpon>bayana_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bayana_hindi.aspx.designer.cs">
+      <DependentUpon>bayana_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="educational_institute_hindi.aspx.cs">
+      <DependentUpon>educational_institute_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="educational_institute_hindi.aspx.designer.cs">
+      <DependentUpon>educational_institute_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.Master.cs">
+      <DependentUpon>home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.Master.designer.cs">
+      <DependentUpon>home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="homeEng.Master.cs">
+      <DependentUpon>homeEng.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeEng.Master.designer.cs">
+      <DependentUpon>homeEng.Master</DependentUpon>
+    </Compile>
+    <Compile Include="homeHindi.Master.cs">
+      <DependentUpon>homeHindi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeHindi.Master.designer.cs">
+      <DependentUpon>homeHindi.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kailadevi_hindi.aspx.cs">
+      <DependentUpon>kailadevi_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kailadevi_hindi.aspx.designer.cs">
+      <DependentUpon>kailadevi_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kalyanray_hindi.aspx.cs">
+      <DependentUpon>kalyanray_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kalyanray_hindi.aspx.designer.cs">
+      <DependentUpon>kalyanray_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="karauli_city_rawal_hindi.aspx.cs">
+      <DependentUpon>karauli_city_rawal_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="karauli_city_rawal_hindi.aspx.designer.cs">
+      <DependentUpon>karauli_city_rawal_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="karauli_distict_hindi.aspx.cs">
+      <DependentUpon>karauli_distict_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="karauli_distict_hindi.aspx.designer.cs">
+      <DependentUpon>karauli_distict_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="karauli_jalvayu_hindi.aspx.cs">
+      <DependentUpon>karauli_jalvayu_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="karauli_jalvayu_hindi.aspx.designer.cs">
+      <DependentUpon>karauli_jalvayu_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="karauli_Now_hindi.aspx.cs">
+      <DependentUpon>karauli_Now_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="karauli_Now_hindi.aspx.designer.cs">
+      <DependentUpon>karauli_Now_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maheshwara_hindi.aspx.cs">
+      <DependentUpon>maheshwara_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maheshwara_hindi.aspx.designer.cs">
+      <DependentUpon>maheshwara_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mandrayal_hindi.aspx.cs">
+      <DependentUpon>mandrayal_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mandrayal_hindi.aspx.designer.cs">
+      <DependentUpon>mandrayal_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="next1_temple_hindi.ascx.cs">
+      <DependentUpon>next1_temple_hindi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="next1_temple_hindi.ascx.designer.cs">
+      <DependentUpon>next1_temple_hindi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="next_story_1.ascx.cs">
+      <DependentUpon>next_story_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="next_story_1.ascx.designer.cs">
+      <DependentUpon>next_story_1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="riyasat_taksal_hindi.aspx.cs">
+      <DependentUpon>riyasat_taksal_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="riyasat_taksal_hindi.aspx.designer.cs">
+      <DependentUpon>riyasat_taksal_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shikarganj_hindi.aspx.cs">
+      <DependentUpon>shikarganj_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shikarganj_hindi.aspx.designer.cs">
+      <DependentUpon>shikarganj_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="timangarh_hindi.aspx.cs">
+      <DependentUpon>timangarh_hindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timangarh_hindi.aspx.designer.cs">
+      <DependentUpon>timangarh_hindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatepage.aspx.cs">
+      <DependentUpon>updatepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatepage.aspx.designer.cs">
+      <DependentUpon>updatepage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\content\anjanimaa.aspx.cs.exclude" />
+    <Content Include="assets\content\anjanimaa.aspx.exclude" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\OpenSans-400.woff" />
+    <Content Include="assets\fonts\Varela-400.woff" />
+    <Content Include="home.Master" />
+    <Content Include="homeHindi.Master" />
+    <Content Include="homeEng.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53699</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53699/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

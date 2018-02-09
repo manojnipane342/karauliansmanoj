@@ -1,0 +1,18 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.master" AutoEventWireup="true" CodeFile="anjanimaa.aspx.cs" Inherits="assets_content_anjanimaa" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+
+
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="body" Runat="Server">
+
+    
+    <h1>Karaulians</h1>
+    i m just write here
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footer1" Runat="Server">
+</asp:Content>
+

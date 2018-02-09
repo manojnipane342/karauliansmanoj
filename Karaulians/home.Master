@@ -1,0 +1,287 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Karaulians.home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderMetaData" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/li-scroller.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style_hindi.css">
+    <style>
+        .container-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .navbar-brand {
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar-nav.navbar-right .btn {
+            position: relative;
+            z-index: 2;
+            padding: 4px 20px;
+            margin: 10px auto;
+        }
+
+        .navbar .navbar-collapse {
+            position: relative;
+        }
+
+            .navbar .navbar-collapse .navbar-right > li:last-child {
+                padding-left: 22px;
+            }
+
+        .navbar .nav-collapse {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding-right: 120px;
+            padding-left: 80px;
+            width: 100%;
+        }
+
+        .navbar.navbar-default .nav-collapse {
+            background-color: #f8f8f8;
+        }
+
+        .navbar.navbar-inverse .nav-collapse {
+            /*background-color: #222;*/
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #1b1a1a;
+            border-color: #ffffff;
+        }
+
+        .navbar .nav-collapse .navbar-form {
+            border-width: 0;
+            box-shadow: none;
+        }
+
+        .nav-collapse > li {
+            float: right;
+        }
+
+        .btn.btn-circle {
+            border-radius: 50px;
+        }
+
+        .btn.btn-outline {
+            background-color: transparent;
+        }
+
+        media screen and (max-width: 767px) {
+            .navbar .navbar-collapse .navbar-right > li:last-child {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .navbar .nav-collapse {
+                margin: 7.5px auto;
+                padding: 0;
+            }
+
+                .navbar .nav-collapse .navbar-form {
+                    margin: 0;
+                }
+
+            .nav-collapse > li {
+                float: none;
+            }
+        }
+
+        .navbar-brand {
+            padding: 0px 0px;
+        }
+
+        body {
+            font-size: 14px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
+    <div class="container-fluid">
+        <div class="box_wrapper">
+            <div class="container-fluid"
+                <!--start menu-->
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                            <a class="navbar-brand" href="Default.aspx" alt="karaulians">
+                                <h2 style="color:#2295ec ; font-family:Papyrus">Karaulians</h2>
+                               
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="Default.aspx">Home</a></li>
+                                <li><a href="Blog.aspx">Blog </a></li>
+                                <li><a href="updatepage.aspx"">Tourist Places </a></li>
+                                <li><a href="updatepage.aspx"">History</a></li>
+                                <li><a href="updatepage.aspx">Team Karaulians</a></li>
+                                <li><a href="login.aspx">Login</a></li>
+
+                                <li>
+                                    <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                                </li>
+                            </ul>
+                            <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
+                                <form class="navbar-form navbar-right" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search" />
+                                    </div>
+                                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container -->
+                </nav><!-- /end menu -->
+            </div>
+             <!--Latest News-->
+            <div class="latest_newsarea">
+                <span>Latest News</span>
+                <ul id="ticker01" class="news_sticker">
+                    <li><a href="#"> करौली राजस्थान के पूर्वी भाग में स्थित</a></li>
+                    <li><a href="#"> करौली राजस्थान के पूर्वी भाग में स्थित</a></li>
+                    <li><a href="#"> करौली राजस्थान के पूर्वी भाग में स्थित</a></li>
+                    <li><a href="#">तीसरी मंजिल पर </a></li>
+                    <li><a href="#">भूमि के गर्भ में छिपा </a></li>
+                     <li><a href="#"> करौली राजस्थान के पूर्वी भाग में स्थित</a></li>
+                    <li><a href="#"> करौली राजस्थान के पूर्वी भाग में स्थित</a></li>
+                    <li><a href="#">तीसरी मंजिल पर </a></li>
+                    <li><a href="#">भूमि के गर्भ में छिपा </a></li>
+                </ul>
+            </div>
+            <!--End Latest News-->
+            </div>
+        </div>
+
+    <asp:ContentPlaceHolder ID="body" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+     <footer id="footer">
+                <div class="footer_top">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single_footer_top wow fadeInLeft">
+                            <h2>About Us</h2>
+                            <div style="color:white">
+                                <p>
+                                   Karaulians  का मुख्य उद्देश्य राजस्थान के इतिहास एवं ऐसा इतिहास जो किन्ही परिस्थितियों के कारण इतिहास के पन्नो
+                                     में संकुचित सा होकर रह गया है, को डिजिटल माध्यम से जन जन तक पहुंचाने का है |
+                                     राजस्थान, जो की शुरू से ही पर्यटन स्थलो से परिपूर्ण रहा है परन्तु वहाँ के कुछ छुपे हुए पर्यटन स्थल जो
+                                     आकर्षक और अदभुत होने के बाद भी सैलानियों की नजरों से अभी भी दूर है,
+                                     उन्हें भारत के पर्यटन स्थलों की सूची की पृष्ठभूमि पर लाने को "करौलियंस टीम" प्रयासरत है| 
+                                    <br />धन्यवाद
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single_footer_top wow fadeInLeft">
+                            <h2>Follow Me</h2>
+                            <ul class="catg3_snav ppost_nav">
+                                <li>
+                                    <div class="media">
+                                        <a class="media-left" href="Default.aspx"> <img src="img/f.jpg" alt=""> </a>
+                                        <a class="media-left" href="Default.aspx"> <img src="img/f2.jpg" alt=""> </a>
+                                        <a class="media-left" href="Default.aspx"> <img src="img/f3.jpeg" alt=""> </a>
+                                        <a class="media-left" href="Default.aspx"> <img src="img/f4.jpg" alt=""> </a>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single_footer_top wow fadeInRight">
+                            <h2>Important Link</h2>
+                            <ul class="">
+                                <li><a href="Default.aspx">Home</a></li>
+                                <li><a href="updatepage.aspx"">History</a></li>
+                                <li><a href="Blog.aspx">Blog</a></li>
+    <li>
+        <asp:Label ID="lblCount" runat="server" ForeColor="#fefdc0"></asp:Label></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single_footer_top wow fadeInRight">
+                            <h2>Contact</h2>
+                            <div class="footer_bottom_right">
+                                <ul>
+
+                                    <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Facebook" href="https://www.facebook.com/Karaulians/"><i class="fa fa-facebook"></i></a></li>
+
+                                    <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Youtube" href="https://www.youtube.com/channel/UCs04XS0vXhAOFUv5gQ-gyjw"><i class="fa fa-youtube"></i></a></li>
+
+                                </ul>
+                                <form action="#">
+                                    <div class="subscribe_mail">
+                                        <input class="form-control" type="email" placeholder="Email Address">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input class="submit_btn" type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="copyright">
+                        <p style="text-align:center;"> &copy; 2017-18 Karaulians All Right Reserved.Develop and design By D. P. J. &nbsp; 
+                              Powered By : <a href="updatepage.aspx"" style="color:#0f7cb4;">Team Karaulians</a></p>
+                    </div>
+
+                </div>
+            </footer>
+            <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.li-scroller.1.0.js"></script>
+    <script src="assets/js/custom.js"></script>
+        <asp:ContentPlaceHolder id="footer1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+</body>
+</html>
