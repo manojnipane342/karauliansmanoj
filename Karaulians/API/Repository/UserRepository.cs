@@ -28,7 +28,8 @@ namespace Karaulians.API.Repository
                                                    x.email.ToLower() == userVM.email.ToLower()
                                                 && x.password == userVM.password
                                                 && x.is_active == true
-                                                && x.is_delete == false);
+                                                && x.is_delete == false
+                );
 
 
                 if (userVM == null)

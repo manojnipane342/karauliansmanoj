@@ -18,7 +18,6 @@
                         </tr>
                     </thead>
                 </table>
-
             </div>
         </div>
     </div>
@@ -28,6 +27,9 @@
         $(document).ready(function () {
             LoadCountryList();
         })
+
+        $('#tblUserMaster_length').css('display','none');
+
         function LoadCountryList() {
             $("#tblUserMaster").DataTable({
                 "searching": true,
@@ -45,8 +47,9 @@
                             orderable: false, render:
                                 function (data, type, full, meta) {
 
-                                    var objstring = ''; objstring = data != "" && data != null ? ('<img alt="image" class="img-circle" src="../profile_img/' + data + '">') : ('<img alt="image" class="img-circle" src="../profile_img/' + full.id + '.jpg" />'); return objstring;
-                                }, width: "10%"
+                                    var objstring = ''; objstring = data != "" && data != null ? ('<img alt="image" class="img-circle" src="/profile_img/' + data + '" style="height:50px; width:55px">') :
+                                        ('<img alt="image" class="img-circle" style="height:50px; width:55px" src="../profile_img/' + full.id + '.jpg"  />'); return objstring;
+                                }, width: "10%;"
                         },
                         { "data": "Name" },
                         { "data": "Email" },

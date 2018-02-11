@@ -210,6 +210,7 @@
     <Content Include="karauli_jalvayu_hindi.aspx" />
     <Content Include="karauli_Now_hindi.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="maheshwara_hindi.aspx" />
     <Content Include="mandrayal_hindi.aspx" />
     <Content Include="newwebvisitors.xml" />
@@ -466,6 +467,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="maheshwara_hindi.aspx.cs">
       <DependentUpon>maheshwara_hindi.aspx</DependentUpon>

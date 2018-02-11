@@ -90,23 +90,26 @@
         }
 
         media screen and (max-width: 767px) {
-            .navbar .navbar-collapse .navbar-right > li:last-child {
-                padding-left: 15px;
-                padding-right: 15px;
+            .navbar .navbar-collapse .navbar-right > li:last-child;
+
+        {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .navbar .nav-collapse {
+            margin: 7.5px auto;
+            padding: 0;
+        }
+
+            .navbar .nav-collapse .navbar-form {
+                margin: 0;
             }
 
-            .navbar .nav-collapse {
-                margin: 7.5px auto;
-                padding: 0;
-            }
+        .nav-collapse > li {
+            float: none;
+        }
 
-                .navbar .nav-collapse .navbar-form {
-                    margin: 0;
-                }
-
-            .nav-collapse > li {
-                float: none;
-            }
         }
 
         .navbar-brand {
@@ -119,6 +122,10 @@
     </style>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+      <script>
+          var SessionUserId = '<%= Session["UserId"] %>';
+          var SessionEmail = '<%= Session["email"] %>';
+    </script>
 </head>
 <body>
     <div id="preloader">
@@ -155,11 +162,64 @@
                                 <li><a href="updatepage.aspx"">Tourist Places </a></li>
                                 <li><a href="updatepage.aspx"">History</a></li>
                                 <li><a href="updatepage.aspx">Team Karaulians</a></li>
-                                <li><a href="login.aspx">Login</a></li>
+                                  <%if (!string.IsNullOrEmpty(Session["email"] as string))
+                                    {%>
+
+                                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <asp:Label ID="login_label" runat="server" Text="Label"></asp:Label>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login" style="width:305px;padding:10px;padding-bottom:0px">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                        <asp:Image ID="profile_pic" runat="server" Height="65px" Width="70px" />
+                                        <%--<img src="<% Session["profile_pic"].ToString(); %>" class="img-circle" width="70px" height="65px"/>--%>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>
+                                            <asp:Label ID="loggeed_name" runat="server" Text="Label"></asp:Label>
+                                                             </strong></p>
+                                        <p class="text-left small">
+                                            <asp:Label ID="logged_user" runat="server" Text="Label"></asp:Label></p>
+                                        <p class="text-left">
+                                            <a href="#" class="btn btn-primary btn-block btn-sm">My Account</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session" style="padding:10px;padding-bottom:0px;padding-top:0px" >
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="logout.aspx" class="btn btn-danger btn-block">Log out</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                            <%}
+                                    else
+                                    {%>
+                                                            <li><a href="login.aspx">Login</a></li>
+                            
+                            <%}%>
 
                                 <li>
                                     <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
-                                </li>
+                                    </li>
+                               
                             </ul>
                             <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
                                 <form class="navbar-form navbar-right" role="search">
@@ -169,6 +229,7 @@
                                     <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                 </form>
                             </div>
+                                    
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container -->
                 </nav><!-- /end menu -->

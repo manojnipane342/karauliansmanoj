@@ -105,7 +105,7 @@
                             //Password_login: $("#password").val(),
                             //Login_Type: $("input[name='typeofuser']:checked").val()
                             email: $("#email").val(),
-                            password: $("#password").val(),
+                           password: $("#password").val()
                         },
                         success: function (response) {
                             console.log(response);
@@ -122,10 +122,12 @@
                 });
                 function SaveUserData(data) {
                     if (data != null) {
+                        console.log(data);
                         var obj = {};
                         obj.id = data.id;
                         obj.email = data.email;
                         obj.usertype = data.RoleName;
+                        obj.name = data.first_name; obj.profile_pic = data.profile_pic;
                         $.ajax({
                             type: 'POST',
                             url: 'login.aspx/SaveUserLoginData',
@@ -139,7 +141,7 @@
                                         window.location = "/Admin/AdminIndex.aspx";
                                     }
                                     else {
-                                        window.location = "/Home.aspx";
+                                        window.location = "/default.aspx";
                                     }
                                 }
                                 else {

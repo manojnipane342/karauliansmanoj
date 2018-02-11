@@ -29,6 +29,18 @@ namespace Karaulians
                 else if (a < 1000)
                     lblCount.Text = "0" + lblCount.Text;
 
+                if (Session["email"] == null)
+                {
+                    login_label.Text = "Guest";
+                    Session["usertype"] = "Guest";
+                }
+                else
+                {
+                    login_label.Text = HttpContext.Current.Session["name"].ToString();
+                    loggeed_name.Text = HttpContext.Current.Session["name"].ToString(); 
+                    logged_user.Text = HttpContext.Current.Session["email"].ToString();
+                    profile_pic.Attributes["src"] = Session["profile_pic"].ToString();
+                }
             }
             catch
             {
